@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d230806-9940-4215-aa98-6833ac639a3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Activations/ActivationFunctions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/Task1/Graphs/s0_25.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/Task1/Graphs/s1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/Task1/Graphs/s4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/Task1/s0_25.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/Task1/s1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/Task1/s4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Helpers/FileHelper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Files/Dataset/zad7-dataset.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Homework_7/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Homework_7/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Homework_7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Homework_7/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,9 +22,9 @@
       <option value="$PROJECT_DIR$/NeuralNetwork.cs" />
       <option value="$PROJECT_DIR$/ActivationFunction.cs" />
       <option value="$PROJECT_DIR$/Activations/IActivationFunction.cs" />
-      <option value="$PROJECT_DIR$/Activations/ActivationFunctions.cs" />
       <option value="$PROJECT_DIR$/Helpers/FileHelper.cs" />
       <option value="$PROJECT_DIR$/Program.cs" />
+      <option value="$PROJECT_DIR$/Activations/ActivationFunctions.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mvR3JPBRyTZWPP0R0WITWTAs4t" />
@@ -76,7 +71,7 @@
       <updated>1610371879107</updated>
       <workItem from="1610371882455" duration="160000" />
       <workItem from="1610372071510" duration="806000" />
-      <workItem from="1610389794501" duration="1673000" />
+      <workItem from="1610389794501" duration="3631000" />
     </task>
     <servers />
   </component>
