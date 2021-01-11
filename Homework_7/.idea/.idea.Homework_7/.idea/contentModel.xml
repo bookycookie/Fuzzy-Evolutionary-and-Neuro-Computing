@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\git\Fuzzy-Evolutionary-and-Neuro-Computing\Homework_7" t="IncludeRecursive">
+      <e p="Activations" t="Include">
+        <e p="ActivationFunctions.cs" t="Include" />
+      </e>
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="Files" t="Include">
+        <e p="Task1" t="Include">
+          <e p="Graphs" t="Include">
+            <e p="s0_25.png" t="Include" />
+            <e p="s1.png" t="Include" />
+            <e p="s4.png" t="Include" />
+          </e>
+          <e p="s0_25.txt" t="Include" />
+          <e p="s1.txt" t="Include" />
+          <e p="s4.txt" t="Include" />
+        </e>
+      </e>
+      <e p="Helpers" t="Include">
+        <e p="FileHelper.cs" t="Include" />
+      </e>
+      <e p="Homework_7.csproj" t="IncludeRecursive" />
+      <e p="Homework_7.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="net5.0" t="Include">
+            <e p="Homework_7.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Program.cs" t="Include" />
+    </e>
+    <e p="C:\Users\Bobi\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Bobi\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Homework_7.-1484214830.00" t="ExcludeRecursive" />
+  </component>
+</project>
