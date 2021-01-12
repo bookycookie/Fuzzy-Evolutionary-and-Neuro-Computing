@@ -6,6 +6,7 @@
         <e p="ActivationFunctions.cs" t="Include" />
       </e>
       <e p="bin" t="ExcludeRecursive" />
+      <e p="Dataset.cs" t="Include" />
       <e p="Files" t="Include">
         <e p="Dataset" t="Include">
           <e p="Graphs" t="Include">
@@ -29,6 +30,7 @@
       </e>
       <e p="Homework_7.csproj" t="IncludeRecursive" />
       <e p="Homework_7.sln" t="IncludeFlat" />
+      <e p="NeuralNetwork.cs" t="Include" />
       <e p="obj" t="ExcludeRecursive">
         <e p="Debug" t="Include">
           <e p="net5.0" t="Include">
@@ -38,6 +40,7 @@
       </e>
       <e p="packages" t="ExcludeRecursive" />
       <e p="Program.cs" t="Include" />
+      <e p="Sample.cs" t="Include" />
     </e>
     <e p="C:\Users\Bobi\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Bobi\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Homework_7.-1484214830.00" t="ExcludeRecursive" />

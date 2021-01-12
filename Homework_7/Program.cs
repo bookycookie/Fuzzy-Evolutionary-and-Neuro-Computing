@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 using Homework_7.Activations;
 using Homework_7.Helpers;
@@ -11,7 +12,10 @@ namespace Homework_7
 
         private static void Main(string[] args)
         {
-            Task1();
+            // Task1();
+            var dataset = new Dataset();
+            var nn = new NeuralNetwork(8, 3, 4);
+            nn.CalculateOutput(1, 2, new double[90]);
         }
 
         private static void Task1()
@@ -26,7 +30,7 @@ namespace Homework_7
                 for (var i = -8; i <= 10; i++)
                 {
                     x.Add(i);
-                    y.Add(ActivationFunctions.Task1(i, w, s));
+                    y.Add(ActivationFunctions.Likeness(new double[] {i}, new[] {w}, new[] {s}));
                 }
 
                 path = $"{path}/s{s.ToString(CultureInfo.InvariantCulture).Replace('.', '_')}.txt";
