@@ -1,5 +1,4 @@
 using System;
-using MathNet.Numerics.LinearAlgebra;
 
 namespace Homework_7.Activations
 {

@@ -5,14 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d230806-9940-4215-aa98-6833ac639a3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Dataset.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NeuralNetwork.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sample.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crossover/DoubleCrossover/ArithmeticCrossover.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crossover/DoubleCrossover/BlxDoubleCrossover.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crossover/DoubleCrossover/CombinedCrossover.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crossover/DoubleCrossover/DiscreteUniformCrossover.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crossover/DoubleCrossover/OnePointCrossover.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crossover/DoubleCrossover/SimpleArithmeticCrossover.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crossover/ICrossover.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeneticAlgorithm/DoubleGA.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeneticAlgorithm/IGeneticAlgorithm.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Individual.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mutation/DoubleMutation/CombinedMutation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mutation/DoubleMutation/GaussianAdditiveMutation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mutation/DoubleMutation/GaussianSwapMutation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mutation/IMutation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RandomExtension.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selection/ISelection.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selection/KTournamentSelection.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Homework_7/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Homework_7/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Homework_7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Homework_7/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Activations/ActivationFunctions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Activations/ActivationFunctions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Files/Dataset/Graphs/zad7-dataset.png" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Dataset/Graphs/zad7-dataset.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ANN/Dataset.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNetwork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ANN/NeuralNetwork.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ANN/Sample.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +38,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/ANN/NeuralNetwork.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ANN/Dataset.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ANN/Sample.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/ActivationFunction.cs" />
@@ -30,9 +51,36 @@
       <option value="$PROJECT_DIR$/Samples.cs" />
       <option value="$PROJECT_DIR$/Activations/ActivationFunctions.cs" />
       <option value="$PROJECT_DIR$/Sample.cs" />
-      <option value="$PROJECT_DIR$/Program.cs" />
       <option value="$PROJECT_DIR$/Dataset.cs" />
       <option value="$PROJECT_DIR$/NeuralNetwork.cs" />
+      <option value="$PROJECT_DIR$/Homework_7.csproj" />
+      <option value="$PROJECT_DIR$/NeuralNetwork/Dataset.cs" />
+      <option value="$PROJECT_DIR$/Individual/BinaryIndividual.cs" />
+      <option value="$PROJECT_DIR$/GeneticAlgorithm/BinaryGA.cs" />
+      <option value="$PROJECT_DIR$/NeuralNetwork/NeuralNetwork.cs" />
+      <option value="$PROJECT_DIR$/Mutation/DoubleMutation/GaussianDoubleMutation.cs" />
+      <option value="$PROJECT_DIR$/ANN/NeuralNetwork.cs" />
+      <option value="$PROJECT_DIR$/ANN/Sample.cs" />
+      <option value="$PROJECT_DIR$/ANN/Dataset.cs" />
+      <option value="$PROJECT_DIR$/Individual/Individual.cs" />
+      <option value="$PROJECT_DIR$/Individual/DoubleIndividual.cs" />
+      <option value="$PROJECT_DIR$/Crossover/ICrossover.cs" />
+      <option value="$PROJECT_DIR$/Crossover/DoubleCrossover/ArithmeticCrossover.cs" />
+      <option value="$PROJECT_DIR$/Individual.cs" />
+      <option value="$PROJECT_DIR$/Selection/ISelection.cs" />
+      <option value="$PROJECT_DIR$/Crossover/DoubleCrossover/BlxDoubleCrossover.cs" />
+      <option value="$PROJECT_DIR$/Crossover/DoubleCrossover/CombinedCrossover.cs" />
+      <option value="$PROJECT_DIR$/Crossover/DoubleCrossover/DiscreteUniformCrossover.cs" />
+      <option value="$PROJECT_DIR$/Crossover/DoubleCrossover/OnePointCrossover.cs" />
+      <option value="$PROJECT_DIR$/Crossover/DoubleCrossover/SimpleArithmeticCrossover.cs" />
+      <option value="$PROJECT_DIR$/GeneticAlgorithm/IGeneticAlgorithm.cs" />
+      <option value="$PROJECT_DIR$/GeneticAlgorithm/DoubleGA.cs" />
+      <option value="$PROJECT_DIR$/Mutation/DoubleMutation/GaussianAdditiveMutation.cs" />
+      <option value="$PROJECT_DIR$/Mutation/DoubleMutation/GaussianSwapMutation.cs" />
+      <option value="$PROJECT_DIR$/Mutation/DoubleMutation/CombinedMutation.cs" />
+      <option value="$PROJECT_DIR$/Mutation/IMutation.cs" />
+      <option value="$PROJECT_DIR$/Selection/KTournamentSelection.cs" />
+      <option value="$PROJECT_DIR$/Program.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mvR3JPBRyTZWPP0R0WITWTAs4t" />
@@ -81,7 +129,8 @@
       <updated>1610371879107</updated>
       <workItem from="1610371882455" duration="160000" />
       <workItem from="1610372071510" duration="806000" />
-      <workItem from="1610389794501" duration="20178000" />
+      <workItem from="1610389794501" duration="20774000" />
+      <workItem from="1610454010134" duration="14871000" />
     </task>
     <servers />
   </component>

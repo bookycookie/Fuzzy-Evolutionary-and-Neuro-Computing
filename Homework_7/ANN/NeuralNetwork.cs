@@ -1,28 +1,28 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using Homework_7.Activations;
 
-namespace Homework_7
+namespace Homework_7.ANN
 {
     public class NeuralNetwork
     {
         private readonly int[] _layers;
-        private readonly int _paramsNum;
+        private readonly Dataset _dataset;
 
         /// <summary>
         /// 2 x <paramref name="layers"/> x 3
         /// </summary>
+        /// <param name="dataset"></param>
         /// <param name="layers"></param>
-        public NeuralNetwork(params int[] layers)
+        public NeuralNetwork(Dataset dataset, params int[] layers)
         {
             var tmp = new List<int> { 2, 3 };
             tmp.InsertRange(1, layers);
             _layers = tmp.ToArray();
-            _paramsNum = GetNumberOfRequiredParameters();
+            _dataset = dataset;
         }
 
-        private int GetNumberOfRequiredParameters()
+        public int GetNumberOfRequiredParameters()
         {
             var sum = 2 * _layers[0] * _layers[1];
 
@@ -75,15 +75,14 @@ namespace Homework_7
                 }
             }
 
-            Console.WriteLine($"I've passed {offset} neurons, should be  {_paramsNum}");
             return outputs[_layers.Length - 1];
         }
         
 
-        public double MeanSquareError(Dataset dataset, double[] parameters)
+        public double MeanSquareError(double[] parameters)
         {
             var mse = 0.0;
-            foreach (var sample in dataset)
+            foreach (var sample in _dataset)
             {
                 var prediction = CalculateOutput(sample.X, sample.Y, parameters);
                 var output = new[] { sample.A, sample.B, sample.C };
@@ -94,22 +93,7 @@ namespace Homework_7
                     mse += error * error;
                 }
             }
-            return mse / dataset.DatasetCount();
-        }
-
-        private int ParametersPerNeuron(int layerIndex) =>
-            layerIndex == 1 ? _layers[0] * 2 : _layers[layerIndex - 1] + 1;
-        
-        public int GetLayerIndexOfNeuron(int neuronIndex)
-        {
-            var neuronsSeen = 0;
-            for (var layerIndex = 1; layerIndex < _layers.Length; layerIndex++)
-            {
-                neuronsSeen += _layers[layerIndex];
-                if (neuronIndex < neuronsSeen) return layerIndex;
-            }
-
-            return -1;
+            return mse / _dataset.DatasetCount();
         }
 
         public override string ToString() => string.Join(" x ", _layers);

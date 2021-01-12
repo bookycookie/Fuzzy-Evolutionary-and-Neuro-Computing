@@ -1,10 +1,9 @@
-using System;
 using System.Collections.Generic;
-using System.Diagnostics;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 
-namespace Homework_7
+namespace Homework_7.ANN
 {
     public class Dataset
     {
@@ -19,11 +18,11 @@ namespace Homework_7
         private static List<Sample> ParseFile() => (from row in File.ReadAllLines(Root)
             select row.Split('\t')
             into split
-            let x = double.Parse(split[0])
-            let y = double.Parse(split[1])
-            let a = double.Parse(split[2])
-            let b = double.Parse(split[3])
-            let c = double.Parse(split[4])
+            let x = double.Parse(split[0], CultureInfo.InvariantCulture)
+            let y = double.Parse(split[1], CultureInfo.InvariantCulture)
+            let a = int.Parse(split[2], CultureInfo.InvariantCulture)
+            let b = int.Parse(split[3], CultureInfo.InvariantCulture)
+            let c = int.Parse(split[4], CultureInfo.InvariantCulture)
             select new Sample
             {
                 X = x,

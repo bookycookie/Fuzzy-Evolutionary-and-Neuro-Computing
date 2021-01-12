@@ -5,8 +5,23 @@
       <e p="Activations" t="Include">
         <e p="ActivationFunctions.cs" t="Include" />
       </e>
+      <e p="ANN" t="Include">
+        <e p="Dataset.cs" t="Include" />
+        <e p="NeuralNetwork.cs" t="Include" />
+        <e p="Sample.cs" t="Include" />
+      </e>
       <e p="bin" t="ExcludeRecursive" />
-      <e p="Dataset.cs" t="Include" />
+      <e p="Crossover" t="Include">
+        <e p="DoubleCrossover" t="Include">
+          <e p="ArithmeticCrossover.cs" t="Include" />
+          <e p="BlxDoubleCrossover.cs" t="Include" />
+          <e p="CombinedCrossover.cs" t="Include" />
+          <e p="DiscreteUniformCrossover.cs" t="Include" />
+          <e p="OnePointCrossover.cs" t="Include" />
+          <e p="SimpleArithmeticCrossover.cs" t="Include" />
+        </e>
+        <e p="ICrossover.cs" t="Include" />
+      </e>
       <e p="Files" t="Include">
         <e p="Dataset" t="Include">
           <e p="Graphs" t="Include">
@@ -25,12 +40,24 @@
           <e p="s4.txt" t="Include" />
         </e>
       </e>
+      <e p="GeneticAlgorithm" t="Include">
+        <e p="DoubleGA.cs" t="Include" />
+        <e p="IGeneticAlgorithm.cs" t="Include" />
+      </e>
       <e p="Helpers" t="Include">
         <e p="FileHelper.cs" t="Include" />
       </e>
       <e p="Homework_7.csproj" t="IncludeRecursive" />
       <e p="Homework_7.sln" t="IncludeFlat" />
-      <e p="NeuralNetwork.cs" t="Include" />
+      <e p="Individual.cs" t="Include" />
+      <e p="Mutation" t="Include">
+        <e p="DoubleMutation" t="Include">
+          <e p="CombinedMutation.cs" t="Include" />
+          <e p="GaussianAdditiveMutation.cs" t="Include" />
+          <e p="GaussianSwapMutation.cs" t="Include" />
+        </e>
+        <e p="IMutation.cs" t="Include" />
+      </e>
       <e p="obj" t="ExcludeRecursive">
         <e p="Debug" t="Include">
           <e p="net5.0" t="Include">
@@ -40,7 +67,11 @@
       </e>
       <e p="packages" t="ExcludeRecursive" />
       <e p="Program.cs" t="Include" />
-      <e p="Sample.cs" t="Include" />
+      <e p="RandomExtension.cs" t="Include" />
+      <e p="Selection" t="Include">
+        <e p="ISelection.cs" t="Include" />
+        <e p="KTournamentSelection.cs" t="Include" />
+      </e>
     </e>
     <e p="C:\Users\Bobi\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Bobi\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Homework_7.-1484214830.00" t="ExcludeRecursive" />
