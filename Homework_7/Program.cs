@@ -1,16 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
 using System.Linq;
-using Homework_7.Activations;
 using Homework_7.ANN;
-using Homework_7.Crossover;
-using Homework_7.Crossover.DoubleCrossover;
-using Homework_7.GeneticAlgorithm;
+using Homework_7.ANN.Activations;
+using Homework_7.GA;
+using Homework_7.GA.Crossover;
+using Homework_7.GA.Crossover.DoubleCrossover;
+using Homework_7.GA.Mutation;
+using Homework_7.GA.Mutation.DoubleMutation;
+using Homework_7.GA.Selection;
 using Homework_7.Helpers;
-using Homework_7.Mutation;
-using Homework_7.Mutation.DoubleMutation;
-using Homework_7.Selection;
 
 namespace Homework_7
 {
@@ -28,7 +29,7 @@ namespace Homework_7
         private static void Run()
         {
             var dataset = new Dataset();
-            var nn = new NeuralNetwork(dataset, 8, 4);
+            var nn = new NeuralNetwork(dataset, 8); //8, 4
             const int populationSize = 10;
             const int iterations = 1_000_000;
             var crossovers = new ICrossover[]
@@ -76,9 +77,38 @@ namespace Homework_7
             Console.WriteLine(
                 $"Prediction rate: {success}/{dataset.DatasetCount()} = {(double) success / dataset.DatasetCount() * 100}%");
 
-            Console.WriteLine();
-            Console.WriteLine($"\nBest network parameters:\n" + "[" +string.Join(" ", bestNetworkParameters) + "]");
-            Console.WriteLine($"\nMax parameter: {bestNetworkParameters.Max()}\nMin parameter: {bestNetworkParameters.Min()}");
+            for (var i = 0; i < bestNetworkParameters.Length; i++)
+                Console.WriteLine($"i: {i + 1} - parameter {bestNetworkParameters[i]}");
+            WriteParameterPoints(bestNetworkParameters);
+        }
+
+        private static void WriteParameterPoints(double[] parameters, int likenessLayerNeurons = 8)
+        {
+            const string path = "C:/git/Fuzzy-Evolutionary-and-Neuro-Computing/Homework_7/Files/Parameters/Data/2x6x4x3.txt";
+            var x = new List<double>(likenessLayerNeurons);
+            var y = new List<double>(likenessLayerNeurons);
+            
+            var varianceX = new List<double>(likenessLayerNeurons);
+            var varianceY = new List<double>(likenessLayerNeurons);
+            using var sw = File.AppendText(path);
+            for (var i = 0; i < 2 * 2 * likenessLayerNeurons; i+=4)
+            {
+                x.Add(parameters[i]);
+                varianceX.Add(Math.Abs(parameters[i + 1]));
+                y.Add(parameters[i + 2]);
+                varianceY.Add(Math.Abs(parameters[i + 3]));
+                // sw.WriteLine(
+                // $"{parameters[i].ToString(CultureInfo.InvariantCulture)} {parameters[i + 2].ToString(CultureInfo.InvariantCulture)}");
+            }
+            
+            sw.WriteLine(string.Join(", ", x.Select(val => val.ToString(CultureInfo.InvariantCulture))));
+            sw.WriteLine(string.Join(", ", varianceX.Select(val => val.ToString(CultureInfo.InvariantCulture))));
+            sw.WriteLine();
+            sw.WriteLine(string.Join(", ", y.Select(val => val.ToString(CultureInfo.InvariantCulture))));
+            sw.WriteLine(string.Join(", ", varianceY.Select(val => val.ToString(CultureInfo.InvariantCulture))));
+            sw.WriteLine();
+            sw.WriteLine();
+            
         }
 
         private static void NeuralNetworkSanityCheck()
@@ -107,7 +137,7 @@ namespace Homework_7
 
         private static void Task1()
         {
-            var path = Root + "Files/Task1/";
+            var path = Root + "Files/Data/Task1/";
             var y = new List<double>();
             var x = new List<double>();
             const double w = 2.0;

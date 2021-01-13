@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
-using Homework_7.Activations;
+using Homework_7.ANN.Activations;
 
 namespace Homework_7.ANN
 {
