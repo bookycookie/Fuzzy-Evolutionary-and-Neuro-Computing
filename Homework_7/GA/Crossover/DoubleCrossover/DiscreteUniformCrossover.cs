@@ -12,7 +12,7 @@ namespace Homework_7.GA.Crossover.DoubleCrossover
             var child = new Individual(dimension);
 
             for (var i = 0; i < dimension; i++)
-                child.Representation[i] = Random.NextDouble() > 0.5 ? a.Representation[i] : b.Representation[i];
+                child.Representation[i] = Random.NextDouble() < 0.5 ? a.Representation[i] : b.Representation[i];
 
             return child;
         }

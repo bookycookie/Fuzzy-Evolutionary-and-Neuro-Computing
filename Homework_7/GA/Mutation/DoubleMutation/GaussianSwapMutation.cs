@@ -16,19 +16,14 @@ namespace Homework_7.GA.Mutation.DoubleMutation
             _deviation = deviation;
         }
 
-        public Individual Mutate(Individual individual)
+        public void Mutate(Individual individual)
         {
             var dimension = individual.Representation.Length;
-            var child = new Individual(dimension);
             for (var i = 0; i < dimension; i++) {
                 var next = Random.NextDouble();
                 if (next < _mutationProbability)
-                    child.Representation[i] = Random.NextGaussian(0, _deviation);
-                else
-                    child.Representation[i] = individual.Representation[i];
+                    individual.Representation[i] = Random.NextGaussian(0, _deviation);
             }
-
-            return child;
         }
     }
 }

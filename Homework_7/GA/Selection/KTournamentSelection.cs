@@ -40,7 +40,7 @@ namespace Homework_7.GA.Selection
             var worst = population[randomized[2]];
 
             var child = _crossover.Cross(best, secondBest);
-            child = _mutation.Mutate(child);
+            _mutation.Mutate(child);
             child.Fitness = -_fitnessFunction(child.Representation);
 
             if(child.Fitness > worst.Fitness)

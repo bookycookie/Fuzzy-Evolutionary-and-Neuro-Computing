@@ -2,6 +2,6 @@
 {
     public interface IMutation
     {
-        public Individual Mutate(Individual individual);
+        public void Mutate(Individual individual);
     }
 }

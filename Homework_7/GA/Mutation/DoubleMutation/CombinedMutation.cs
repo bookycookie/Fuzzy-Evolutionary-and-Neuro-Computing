@@ -21,13 +21,10 @@ namespace Homework_7.GA.Mutation.DoubleMutation
             _desirability = desirability;
         }
 
-        public Individual Mutate(Individual individual)
+        public void Mutate(Individual individual)
         {
             var desirability = _desirability.Sum();
             var random = Random.NextDouble(0, desirability);
-
-            var dimension = individual.Representation.Length;
-            var child = new Individual(dimension);
 
             var choice = 0.0;
             for (var mutationIdx = 0; mutationIdx < _desirability.Length; mutationIdx++)
@@ -35,12 +32,11 @@ namespace Homework_7.GA.Mutation.DoubleMutation
                 choice += _desirability[mutationIdx];
                 if (random <= choice) 
                 {
-                    child = _mutations[mutationIdx].Mutate(individual);
+                    _mutations[mutationIdx].Mutate(individual);
                     break;
                 }
             }
 
-            return child;
         }
     }
 }
