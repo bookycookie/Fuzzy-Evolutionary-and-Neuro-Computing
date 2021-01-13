@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\git\Fuzzy-Evolutionary-and-Neuro-Computing\Homework_7" t="IncludeRecursive">
+      <e p="ANN" t="Include">
+        <e p="Activations" t="Include">
+          <e p="ActivationFunctions.cs" t="Include" />
+        </e>
+        <e p="Dataset.cs" t="Include" />
+        <e p="NeuralNetwork.cs" t="Include" />
+        <e p="Sample.cs" t="Include" />
+      </e>
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="Files" t="Include">
+        <e p="Dataset" t="Include">
+          <e p="Graphs" t="Include">
+            <e p="zad7-dataset.png" t="Include" />
+          </e>
+          <e p="zad7-dataset.txt" t="Include" />
+        </e>
+        <e p="Parameters" t="Include">
+          <e p="Data" t="Include">
+            <e p="2x6x4x3.txt" t="Include" />
+            <e p="2x8x3.txt" t="Include" />
+            <e p="2x8x4x3.txt" t="Include" />
+          </e>
+          <e p="Graphs" t="Include">
+            <e p="2x6x4x3" t="Include">
+              <e p="2x6x4x3.png" t="Include" />
+            </e>
+            <e p="2x8x3" t="Include">
+              <e p="2x8x3.png" t="Include" />
+              <e p="2x8x3_scale.png" t="Include" />
+            </e>
+            <e p="2x8x4x3" t="Include">
+              <e p="2x8x4x3.png" t="Include" />
+              <e p="2x8x4x3_scale.png" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Task1" t="Include">
+          <e p="Data" t="Include">
+            <e p="combined.txt" t="Include" />
+            <e p="s0_25.txt" t="Include" />
+            <e p="s1.txt" t="Include" />
+            <e p="s4.txt" t="Include" />
+          </e>
+          <e p="Graphs" t="Include">
+            <e p="combined.png" t="Include" />
+            <e p="s0_25.png" t="Include" />
+            <e p="s1.png" t="Include" />
+            <e p="s4.png" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="GA" t="Include">
+        <e p="Crossover" t="Include">
+          <e p="DoubleCrossover" t="Include">
+            <e p="ArithmeticCrossover.cs" t="Include" />
+            <e p="BlxDoubleCrossover.cs" t="Include" />
+            <e p="CombinedCrossover.cs" t="Include" />
+            <e p="DiscreteUniformCrossover.cs" t="Include" />
+            <e p="OnePointCrossover.cs" t="Include" />
+            <e p="SimpleArithmeticCrossover.cs" t="Include" />
+          </e>
+          <e p="ICrossover.cs" t="Include" />
+        </e>
+        <e p="DoubleGA.cs" t="Include" />
+        <e p="IGeneticAlgorithm.cs" t="Include" />
+        <e p="Individual.cs" t="Include" />
+        <e p="Mutation" t="Include">
+          <e p="DoubleMutation" t="Include">
+            <e p="CombinedMutation.cs" t="Include" />
+            <e p="GaussianAdditiveMutation.cs" t="Include" />
+            <e p="GaussianSwapMutation.cs" t="Include" />
+          </e>
+          <e p="IMutation.cs" t="Include" />
+        </e>
+        <e p="Selection" t="Include">
+          <e p="ISelection.cs" t="Include" />
+          <e p="KTournamentSelection.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Helpers" t="Include">
+        <e p="FileHelper.cs" t="Include" />
+        <e p="RandomExtension.cs" t="Include" />
+      </e>
+      <e p="Homework_7.csproj" t="IncludeRecursive" />
+      <e p="Homework_7.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="net5.0" t="Include">
+            <e p="Homework_7.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Program.cs" t="Include" />
+    </e>
+    <e p="C:\Users\Bobi\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Bobi\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Homework_7.-1484214830.00" t="ExcludeRecursive" />
+  </component>
+</project>
