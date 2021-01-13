@@ -36,7 +36,7 @@ namespace Homework_7.ANN
 
         public double[] CalculateOutput(double x, double y, double[] parameters)
         {
-            var offset = 0;
+            var paramIdx = 0;
             var outputs = new double[_layers.Length][];
             const int likenessLayerIdx = 1;
             
@@ -46,10 +46,10 @@ namespace Homework_7.ANN
             // Activate the likeness layer
             for (var likenessNeuronIdx = 0; likenessNeuronIdx < _layers[likenessLayerIdx]; likenessNeuronIdx++)
             {
-                var weightX = parameters[offset++];
-                var varianceX = parameters[offset++];
-                var weightY = parameters[offset++];
-                var varianceY = parameters[offset++];
+                var weightX = parameters[paramIdx++];
+                var varianceX = parameters[paramIdx++];
+                var weightY = parameters[paramIdx++];
+                var varianceY = parameters[paramIdx++];
 
                 var xy = new[] {x, y};
                 var w = new[] {weightX, weightY};
@@ -70,7 +70,7 @@ namespace Homework_7.ANN
                 {
                     // Collect previous outputs
                     // Bias + previous output
-                    var output = parameters[offset++] + previousOutput.Sum(o => o * parameters[offset++]);
+                    var output = parameters[paramIdx++] + previousOutput.Sum(o => o * parameters[paramIdx++]);
                     outputs[hiddenLayerIdx][hiddenNeuronIdx] = ActivationFunctions.Sigmoid(output);
                 }
             }
