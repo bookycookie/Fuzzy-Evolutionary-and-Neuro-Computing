@@ -5,30 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d230806-9940-4215-aa98-6833ac639a3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Crossover/DoubleCrossover/ArithmeticCrossover.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crossover/DoubleCrossover/BlxDoubleCrossover.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crossover/DoubleCrossover/CombinedCrossover.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crossover/DoubleCrossover/DiscreteUniformCrossover.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crossover/DoubleCrossover/OnePointCrossover.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crossover/DoubleCrossover/SimpleArithmeticCrossover.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crossover/ICrossover.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeneticAlgorithm/DoubleGA.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeneticAlgorithm/IGeneticAlgorithm.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Individual.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Mutation/DoubleMutation/CombinedMutation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Mutation/DoubleMutation/GaussianAdditiveMutation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Mutation/DoubleMutation/GaussianSwapMutation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Mutation/IMutation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RandomExtension.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Selection/ISelection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Selection/KTournamentSelection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Homework_7/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Homework_7/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Homework_7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Homework_7/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Activations/ActivationFunctions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Activations/ActivationFunctions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ANN/Dataset.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNetwork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ANN/NeuralNetwork.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeneticAlgorithm/DoubleGA.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeneticAlgorithm/DoubleGA.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Individual.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Individual.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mutation/DoubleMutation/CombinedMutation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mutation/DoubleMutation/CombinedMutation.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ANN/Sample.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Selection/KTournamentSelection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Selection/KTournamentSelection.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,13 +56,13 @@
       <option value="$PROJECT_DIR$/Crossover/DoubleCrossover/OnePointCrossover.cs" />
       <option value="$PROJECT_DIR$/Crossover/DoubleCrossover/SimpleArithmeticCrossover.cs" />
       <option value="$PROJECT_DIR$/GeneticAlgorithm/IGeneticAlgorithm.cs" />
-      <option value="$PROJECT_DIR$/GeneticAlgorithm/DoubleGA.cs" />
       <option value="$PROJECT_DIR$/Mutation/DoubleMutation/GaussianAdditiveMutation.cs" />
       <option value="$PROJECT_DIR$/Mutation/DoubleMutation/GaussianSwapMutation.cs" />
-      <option value="$PROJECT_DIR$/Mutation/DoubleMutation/CombinedMutation.cs" />
       <option value="$PROJECT_DIR$/Mutation/IMutation.cs" />
-      <option value="$PROJECT_DIR$/Selection/KTournamentSelection.cs" />
+      <option value="$PROJECT_DIR$/Mutation/DoubleMutation/CombinedMutation.cs" />
       <option value="$PROJECT_DIR$/Program.cs" />
+      <option value="$PROJECT_DIR$/Selection/KTournamentSelection.cs" />
+      <option value="$PROJECT_DIR$/GeneticAlgorithm/DoubleGA.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mvR3JPBRyTZWPP0R0WITWTAs4t" />
@@ -98,6 +80,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
     <configuration name="Homework_7" type="DotNetProject" factoryName=".NET Project">
@@ -130,7 +114,7 @@
       <workItem from="1610371882455" duration="160000" />
       <workItem from="1610372071510" duration="806000" />
       <workItem from="1610389794501" duration="20774000" />
-      <workItem from="1610454010134" duration="14871000" />
+      <workItem from="1610454010134" duration="22553000" />
     </task>
     <servers />
   </component>
@@ -149,5 +133,12 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="DotNetProject">
+        <watch expression="parameters" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

@@ -15,7 +15,8 @@ namespace Homework_7.Selection
 
         private static readonly Random Random = new();
 
-        public KTournamentSelection(Func<double[], double> fitnessFunction, ICrossover crossover, IMutation mutation, int k = 3)
+        public KTournamentSelection(Func<double[], double> fitnessFunction, ICrossover crossover, IMutation mutation,
+            int k = 3)
         {
             _fitnessFunction = fitnessFunction;
             _crossover = crossover;
@@ -25,7 +26,6 @@ namespace Homework_7.Selection
 
         public Individual Select(List<Individual> population)
         {
-
             var randomized = new int[_k];
             for (var i = 0; i < _k; i++)
             {
@@ -34,16 +34,17 @@ namespace Homework_7.Selection
             }
 
             randomized = randomized.OrderByDescending(i => population[i].Fitness).ToArray();
-            
+
             var best = population[randomized[0]];
             var secondBest = population[randomized[1]];
             var worst = population[randomized[2]];
-            
+
             var child = _crossover.Cross(best, secondBest);
-            // var child = best;
             child = _mutation.Mutate(child);
             child.Fitness = -_fitnessFunction(child.Representation);
 
+            // if(child.Fitness > worst.Fitness)
+                // population[randomized[2]] = child;
             population[randomized[2]] = child;
             
             return child;

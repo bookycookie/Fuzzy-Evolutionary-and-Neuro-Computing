@@ -28,7 +28,7 @@ namespace Homework_7.GeneticAlgorithm
             _maxIndividual = new Individual(dimensions);
         }
 
-        public Individual FindBestIndividual(bool speedRun, ISelection selection, double epsilon = 10E-7)
+        public Individual FindBestIndividual(bool speedRun, ISelection selection, double epsilon = 1E-7)
         {
             _population = InitializePopulation(_dimensions, _populationSize);
             for (var i = 0; i < _iterations; i++)
@@ -38,7 +38,7 @@ namespace Homework_7.GeneticAlgorithm
                 if (child.Fitness > _maxIndividual.Fitness)
                 {
                     _maxIndividual = child;
-                    Console.WriteLine($"i: {i} - MSE: {Math.Abs(_maxIndividual.Fitness)}");
+                    Console.WriteLine($"i: {i:N0} - MSE: {Math.Abs(_maxIndividual.Fitness)}");
                 }
 
                 if (speedRun && Math.Abs(_maxIndividual.Fitness) < epsilon)

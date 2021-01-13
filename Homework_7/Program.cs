@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 using Homework_7.Activations;
 using Homework_7.ANN;
 using Homework_7.Crossover;
@@ -20,10 +21,16 @@ namespace Homework_7
         private static void Main(string[] args)
         {
             // Task1();
+            // NeuralNetworkSanityCheck();
+            Run();
+        }
+
+        private static void Run()
+        {
             var dataset = new Dataset();
-            var nn = new NeuralNetwork(dataset, 8);
-            const int populationSize = 20;
-            const int iterations = 100_000;
+            var nn = new NeuralNetwork(dataset, 8, 4);
+            const int populationSize = 10;
+            const int iterations = 1_000_000;
             var crossovers = new ICrossover[]
             {
                 new BlxDoubleCrossover(),
@@ -34,11 +41,11 @@ namespace Homework_7
             };
             var mutations = new IMutation[]
             {
-                new GaussianAdditiveMutation(mutationProbability: 0.01, deviation: 0.2),
-                new GaussianAdditiveMutation(mutationProbability: 0.01, deviation: 0.4),
-                new GaussianSwapMutation(mutationProbability: 0.01, deviation: 1.0)
+                new GaussianAdditiveMutation(mutationProbability: 0.02, deviation: 0.2),
+                new GaussianAdditiveMutation(mutationProbability: 0.02, deviation: 0.4),
+                new GaussianSwapMutation(mutationProbability: 0.02, deviation: 0.5)
             };
-            var desirability = new[] {4.0, 2.0, 1.0}; // 4.0, 2.0, 1.0
+            var desirability = new[] {18.0, 4.0, 2.0};
 
             var combinedCrossover = new CombinedCrossover(crossovers);
             var combinedMutation = new CombinedMutation(mutations, desirability);
@@ -50,7 +57,7 @@ namespace Homework_7
             var parameters = new double[parametersCount];
             var doubleGa = new DoubleGa(nn, parameters, parametersCount, populationSize, iterations);
 
-            var bestNetworkParameters = doubleGa.FindBestIndividual(speedRun: false, selection).Representation;
+            var bestNetworkParameters = doubleGa.FindBestIndividual(speedRun: true, selection).Representation;
 
             var success = 0;
             Console.WriteLine($"\nPrediction | Actual");
@@ -68,6 +75,10 @@ namespace Homework_7
 
             Console.WriteLine(
                 $"Prediction rate: {success}/{dataset.DatasetCount()} = {(double) success / dataset.DatasetCount() * 100}%");
+
+            Console.WriteLine();
+            Console.WriteLine($"\nBest network parameters:\n" + "[" +string.Join(" ", bestNetworkParameters) + "]");
+            Console.WriteLine($"Max parameter: {bestNetworkParameters.Max()}\nMin parameter: {bestNetworkParameters.Min()}");
         }
 
         private static void NeuralNetworkSanityCheck()
@@ -81,14 +92,17 @@ namespace Homework_7
                 0.25000403414014905, 0.0371730844663331, 0.5647879268810096, 0.9375631650619036, 0.8069575148667012,
                 0.20274918582418433, -0.4666248929997091, -0.700613468746009
             };
-            var xs = new[] {1, 20, 15, 5};
-            var ys = new[] {1, 20, 10, 25};
+            // var xs = new[] {1, 20, 15, 5};
+            // var ys = new[] {1, 20, 10, 25};
 
-            for (var i = 0; i < xs.Length; i++)
-            {
-                var toPrint = nn.CalculateOutput(xs[i], ys[i], paramsTest);
-                Console.WriteLine(string.Join(" ", toPrint));
-            }
+            // for (var i = 0; i < xs.Length; i++)
+            // {
+                // var toPrint = nn.CalculateOutput(xs[i], ys[i], paramsTest);
+                // Console.WriteLine(string.Join(" ", toPrint));
+            // }
+
+            Console.WriteLine(nn.MeanSquareError(paramsTest));
+            
         }
 
         private static void Task1()

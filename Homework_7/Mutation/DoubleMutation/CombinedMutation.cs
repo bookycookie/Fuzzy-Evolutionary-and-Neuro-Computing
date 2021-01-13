@@ -11,8 +11,6 @@ namespace Homework_7.Mutation.DoubleMutation
         private static readonly Random Random = new();
 
         private readonly IMutation[] _mutations;
-        private readonly double[] _deviations;
-        private readonly double[] _mutationProbabilities;
         private readonly double[] _desirability;
 
         public CombinedMutation(IMutation[] mutations,
@@ -35,7 +33,10 @@ namespace Homework_7.Mutation.DoubleMutation
             {
                 choice += _desirability[mutationIdx];
                 if (random <= choice) 
+                {
                     child = _mutations[mutationIdx].Mutate(individual);
+                    break;
+                }
             }
 
             return child;
