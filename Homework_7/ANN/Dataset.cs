@@ -10,7 +10,7 @@ namespace Homework_7.ANN
         private List<Sample> Samples { get; set; }
 
         private const string Root =
-            "C:/git/Fuzzy-Evolutionary-and-Neuro-Computing/Homework_7/Files/Dataset/zad7-dataset.txt";
+            "./Files/Dataset/zad7-dataset.txt";
 
         public IEnumerator<Sample> GetEnumerator() => Samples.GetEnumerator();
         public Dataset() => Samples = ParseFile();

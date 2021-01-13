@@ -43,8 +43,6 @@ namespace Homework_7.Selection
             child = _mutation.Mutate(child);
             child.Fitness = -_fitnessFunction(child.Representation);
 
-            // if(child.Fitness > worst.Fitness)
-                // population[randomized[2]] = child;
             population[randomized[2]] = child;
             
             return child;

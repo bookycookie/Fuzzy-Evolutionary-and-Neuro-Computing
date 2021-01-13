@@ -38,7 +38,7 @@ namespace Homework_7.GeneticAlgorithm
                 if (child.Fitness > _maxIndividual.Fitness)
                 {
                     _maxIndividual = child;
-                    Console.WriteLine($"i: {i:N0} - MSE: {Math.Abs(_maxIndividual.Fitness)}");
+                    Console.WriteLine($"i: {i:N0} - MSE: {-_maxIndividual.Fitness}");
                 }
 
                 if (speedRun && Math.Abs(_maxIndividual.Fitness) < epsilon)

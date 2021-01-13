@@ -16,7 +16,7 @@ namespace Homework_7
 {
     class Program
     {
-        private const string Root = "C:/git/Fuzzy-Evolutionary-and-Neuro-Computing/Homework_7/";
+        private const string Root = "./Files/Dataset/zad7-dataset.txt";
 
         private static void Main(string[] args)
         {
@@ -78,7 +78,7 @@ namespace Homework_7
 
             Console.WriteLine();
             Console.WriteLine($"\nBest network parameters:\n" + "[" +string.Join(" ", bestNetworkParameters) + "]");
-            Console.WriteLine($"Max parameter: {bestNetworkParameters.Max()}\nMin parameter: {bestNetworkParameters.Min()}");
+            Console.WriteLine($"\nMax parameter: {bestNetworkParameters.Max()}\nMin parameter: {bestNetworkParameters.Min()}");
         }
 
         private static void NeuralNetworkSanityCheck()
@@ -92,14 +92,14 @@ namespace Homework_7
                 0.25000403414014905, 0.0371730844663331, 0.5647879268810096, 0.9375631650619036, 0.8069575148667012,
                 0.20274918582418433, -0.4666248929997091, -0.700613468746009
             };
-            // var xs = new[] {1, 20, 15, 5};
-            // var ys = new[] {1, 20, 10, 25};
+            var xs = new[] {1, 20, 15, 5};
+            var ys = new[] {1, 20, 10, 25};
 
-            // for (var i = 0; i < xs.Length; i++)
-            // {
-                // var toPrint = nn.CalculateOutput(xs[i], ys[i], paramsTest);
-                // Console.WriteLine(string.Join(" ", toPrint));
-            // }
+            for (var i = 0; i < xs.Length; i++)
+            {
+                var toPrint = nn.CalculateOutput(xs[i], ys[i], paramsTest);
+                Console.WriteLine(string.Join(" ", toPrint));
+            }
 
             Console.WriteLine(nn.MeanSquareError(paramsTest));
             

@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1d230806-9940-4215-aa98-6833ac639a3b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Homework_7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Homework_7/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANN/Dataset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ANN/Dataset.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeneticAlgorithm/DoubleGA.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeneticAlgorithm/DoubleGA.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Individual.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Individual.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mutation/DoubleMutation/CombinedMutation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mutation/DoubleMutation/CombinedMutation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework_7.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_7.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Selection/KTournamentSelection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Selection/KTournamentSelection.cs" afterDir="false" />
     </list>
@@ -43,7 +43,6 @@
       <option value="$PROJECT_DIR$/Mutation/DoubleMutation/GaussianDoubleMutation.cs" />
       <option value="$PROJECT_DIR$/ANN/NeuralNetwork.cs" />
       <option value="$PROJECT_DIR$/ANN/Sample.cs" />
-      <option value="$PROJECT_DIR$/ANN/Dataset.cs" />
       <option value="$PROJECT_DIR$/Individual/Individual.cs" />
       <option value="$PROJECT_DIR$/Individual/DoubleIndividual.cs" />
       <option value="$PROJECT_DIR$/Crossover/ICrossover.cs" />
@@ -60,9 +59,10 @@
       <option value="$PROJECT_DIR$/Mutation/DoubleMutation/GaussianSwapMutation.cs" />
       <option value="$PROJECT_DIR$/Mutation/IMutation.cs" />
       <option value="$PROJECT_DIR$/Mutation/DoubleMutation/CombinedMutation.cs" />
-      <option value="$PROJECT_DIR$/Program.cs" />
       <option value="$PROJECT_DIR$/Selection/KTournamentSelection.cs" />
       <option value="$PROJECT_DIR$/GeneticAlgorithm/DoubleGA.cs" />
+      <option value="$PROJECT_DIR$/Program.cs" />
+      <option value="$PROJECT_DIR$/ANN/Dataset.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mvR3JPBRyTZWPP0R0WITWTAs4t" />
@@ -114,7 +114,7 @@
       <workItem from="1610371882455" duration="160000" />
       <workItem from="1610372071510" duration="806000" />
       <workItem from="1610389794501" duration="20774000" />
-      <workItem from="1610454010134" duration="22553000" />
+      <workItem from="1610454010134" duration="23178000" />
     </task>
     <servers />
   </component>

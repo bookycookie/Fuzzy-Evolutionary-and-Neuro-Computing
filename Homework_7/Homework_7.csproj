@@ -13,4 +13,10 @@
       <Folder Include="Files\Task1\Graphs" />
     </ItemGroup>
 
+    <ItemGroup>
+        <Content Include="Files/Dataset/zad7-dataset.txt">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+
 </Project>
