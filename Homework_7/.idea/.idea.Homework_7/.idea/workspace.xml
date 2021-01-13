@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d230806-9940-4215-aa98-6833ac639a3b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Homework_7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Homework_7/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/2x6x4x3_scale.png" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Parameters/Graphs/2x6x4x3/2x6x4x3_scale.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework_7.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_7.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,11 +62,11 @@
       <option value="$PROJECT_DIR$/Files/Parameters/2x8x3.txt" />
       <option value="$PROJECT_DIR$/Files/Task1/Data/s1.txt" />
       <option value="$PROJECT_DIR$/Files/Task1/Data/combined.txt" />
-      <option value="$PROJECT_DIR$/Files/Parameters/Data/2x6x4x3.txt" />
       <option value="$PROJECT_DIR$/ANN/Activations/ActivationFunctions.cs" />
       <option value="$PROJECT_DIR$/Individual.cs" />
       <option value="$PROJECT_DIR$/GA/Individual.cs" />
       <option value="$PROJECT_DIR$/Helpers/RandomExtension.cs" />
+      <option value="$PROJECT_DIR$/Files/Parameters/Data/2x6x4x3.txt" />
       <option value="$PROJECT_DIR$/Program.cs" />
     </changedPaths>
   </component>
@@ -119,7 +119,7 @@
       <workItem from="1610371882455" duration="160000" />
       <workItem from="1610372071510" duration="806000" />
       <workItem from="1610389794501" duration="20774000" />
-      <workItem from="1610454010134" duration="33720000" />
+      <workItem from="1610454010134" duration="34020000" />
     </task>
     <servers />
   </component>
