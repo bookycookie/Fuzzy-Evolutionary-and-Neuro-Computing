@@ -11,6 +11,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Homework_7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Homework_7/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Files/Parameters/Data/2x6x4x3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Parameters/Data/2x6x4x3.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GA/Crossover/DoubleCrossover/DiscreteUniformCrossover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GA/Crossover/DoubleCrossover/DiscreteUniformCrossover.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GA/Mutation/DoubleMutation/CombinedMutation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GA/Mutation/DoubleMutation/CombinedMutation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GA/Mutation/DoubleMutation/GaussianAdditiveMutation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GA/Mutation/DoubleMutation/GaussianAdditiveMutation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GA/Mutation/DoubleMutation/GaussianSwapMutation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GA/Mutation/DoubleMutation/GaussianSwapMutation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GA/Mutation/IMutation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GA/Mutation/IMutation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GA/Selection/KTournamentSelection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GA/Selection/KTournamentSelection.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,6 +79,11 @@
       <option value="$PROJECT_DIR$/Files/Parameters/Data/2x6x4x3.txt" />
       <option value="$PROJECT_DIR$/ANN/Activations/ActivationFunctions.cs" />
       <option value="$PROJECT_DIR$/GA/Crossover/DoubleCrossover/DiscreteUniformCrossover.cs" />
+      <option value="$PROJECT_DIR$/GA/Mutation/IMutation.cs" />
+      <option value="$PROJECT_DIR$/GA/Mutation/DoubleMutation/CombinedMutation.cs" />
+      <option value="$PROJECT_DIR$/GA/Mutation/DoubleMutation/GaussianAdditiveMutation.cs" />
+      <option value="$PROJECT_DIR$/GA/Mutation/DoubleMutation/GaussianSwapMutation.cs" />
+      <option value="$PROJECT_DIR$/GA/Selection/KTournamentSelection.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mvR3JPBRyTZWPP0R0WITWTAs4t" />
@@ -125,7 +135,7 @@
       <workItem from="1610371882455" duration="160000" />
       <workItem from="1610372071510" duration="806000" />
       <workItem from="1610389794501" duration="20774000" />
-      <workItem from="1610454010134" duration="39213000" />
+      <workItem from="1610454010134" duration="39541000" />
     </task>
     <servers />
   </component>
