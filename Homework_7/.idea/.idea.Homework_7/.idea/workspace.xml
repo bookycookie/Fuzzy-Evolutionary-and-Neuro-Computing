@@ -5,33 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d230806-9940-4215-aa98-6833ac639a3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Files/Parameters/Data/2x6x4x3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/Parameters/Data/2x8x3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/Parameters/Data/2x8x4x3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/Parameters/Graphs/2x6x4x3/2x6x4x3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/Parameters/Graphs/2x8x3/2x8x3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/Parameters/Graphs/2x8x3/2x8x3_scale.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/Parameters/Graphs/2x8x4x3/2x8x4x3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/Parameters/Graphs/2x8x4x3/2x8x4x3_scale.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/Task1/Data/combined.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/Task1/Graphs/combined.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PlottingHelper/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PlottingHelper/.idea/PlottingHelper.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PlottingHelper/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PlottingHelper/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PlottingHelper/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PlottingHelper/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PlottingHelper/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PlottingHelper/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Homework_7/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Homework_7/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Homework_7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Homework_7/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Files/Task1/s0_25.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Task1/Data/s0_25.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Files/Task1/s1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Task1/Data/s1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Files/Task1/s4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Task1/Data/s4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeneticAlgorithm/DoubleGA.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeneticAlgorithm/DoubleGA.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_7.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_7.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Selection/KTournamentSelection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Selection/KTournamentSelection.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +42,6 @@
       <option value="$PROJECT_DIR$/Individual/DoubleIndividual.cs" />
       <option value="$PROJECT_DIR$/Crossover/ICrossover.cs" />
       <option value="$PROJECT_DIR$/Crossover/DoubleCrossover/ArithmeticCrossover.cs" />
-      <option value="$PROJECT_DIR$/Individual.cs" />
       <option value="$PROJECT_DIR$/Selection/ISelection.cs" />
       <option value="$PROJECT_DIR$/Crossover/DoubleCrossover/BlxDoubleCrossover.cs" />
       <option value="$PROJECT_DIR$/Crossover/DoubleCrossover/CombinedCrossover.cs" />
@@ -89,6 +63,10 @@
       <option value="$PROJECT_DIR$/Files/Task1/Data/s1.txt" />
       <option value="$PROJECT_DIR$/Files/Task1/Data/combined.txt" />
       <option value="$PROJECT_DIR$/Files/Parameters/Data/2x6x4x3.txt" />
+      <option value="$PROJECT_DIR$/ANN/Activations/ActivationFunctions.cs" />
+      <option value="$PROJECT_DIR$/Individual.cs" />
+      <option value="$PROJECT_DIR$/GA/Individual.cs" />
+      <option value="$PROJECT_DIR$/Helpers/RandomExtension.cs" />
       <option value="$PROJECT_DIR$/Program.cs" />
     </changedPaths>
   </component>
@@ -141,7 +119,7 @@
       <workItem from="1610371882455" duration="160000" />
       <workItem from="1610372071510" duration="806000" />
       <workItem from="1610389794501" duration="20774000" />
-      <workItem from="1610454010134" duration="32629000" />
+      <workItem from="1610454010134" duration="33720000" />
     </task>
     <servers />
   </component>

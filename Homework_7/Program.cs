@@ -79,7 +79,7 @@ namespace Homework_7
 
             for (var i = 0; i < bestNetworkParameters.Length; i++)
                 Console.WriteLine($"i: {i + 1} - parameter {bestNetworkParameters[i]}");
-            WriteParameterPoints(bestNetworkParameters);
+            WriteParameterPoints(bestNetworkParameters, 8);
         }
 
         private static void WriteParameterPoints(double[] parameters, int likenessLayerNeurons = 8)
