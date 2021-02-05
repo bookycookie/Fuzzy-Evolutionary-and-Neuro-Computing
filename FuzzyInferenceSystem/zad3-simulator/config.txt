@@ -1,0 +1,4 @@
+C:\Faks\NENR\Projekt\Homework\bin\Debug\netcoreapp3.1\Homework.exe
+2
+20
+10
